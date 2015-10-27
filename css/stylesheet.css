@@ -1,16 +1,17 @@
 body {
 	box-sizing: border-box;
-	margin-top:5%;
+	
 }
 ul {
 	list-style-type: none;
-	margin:0;
+	margin: 10px auto;
 }
 
 li {
 	display: inline-block;
-	margin:0px 5px;
+	margin:0px 10px;
 	padding: 10px;
+	
 }
 
 p {
@@ -29,8 +30,8 @@ p {
 }
 
 #container {
-	height: 1000px;
-	padding: 2px;
+	
+	padding: 1%;
 	
 }
 
@@ -40,17 +41,34 @@ p {
     position: fixed;
     background-color: white;
     top: 0;
-    margin-bottom: 20px;
+    /*padding-bottom: 20px;*/
+    
 
-    /* display: block; */
+    
 }
 
-#tabContainer nav {
-	/*position: relative;*/
-	
+#tabContainer nav, #footerContainer nav {
+	left: 0;
+	text-align: center;
 	height: auto;
-	width: 300px;
-	/*background-color: green;*/
-	margin: 0 auto;
+	max-width: 500px;
+	background-color: green;
+	
 	padding: 0;
+}
+
+img {
+	max-width: 50px;
+}
+
+#footerContainer {
+	width:100%;
+}
+#footerContainer nav {
+	position: relative;
+	bottom: 0;
+}
+
+@media (max-height:720px) {
+
 }
